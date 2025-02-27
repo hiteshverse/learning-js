@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="first">First</button>
+    <button id="second">Second</button>
+    <button id="third">Third</button>
+
+    <script>
+        let fSelect = document.getElementById('first');
+        let sSelect = document.getElementById('second');
+        let tSelect = document.getElementById('third');
+
+        fSelect.addEventListener('click', () => alert('first btn clicked'))
+        sSelect.addEventListener('click', () => alert('second btn clicked'))
+        tSelect.addEventListener('click', () => alert('third btn clicked'))
+    </script>
+</body>
+</html>
