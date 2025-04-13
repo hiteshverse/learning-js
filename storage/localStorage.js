@@ -1,11 +1,13 @@
-const form = document.querySelector("form");
+const submitBtn = document.querySelector("#submit-btn");
 const username = document.getElementById("username");
+const uname = document.getElementById("name")
 
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
+submitBtn.addEventListener("click", function (event) {
     let name = username.value;
-    localStorage.setItem("user", name);
+    localStorage.setItem(`user`, name);
+
+    
 
     username.value = "";
 });
@@ -13,5 +15,5 @@ form.addEventListener("submit", function (event) {
 
 window.addEventListener("load", function () {
     let user = localStorage.getItem("user");
-    document.getElementById("name").textContent = user;
+    uname.textContent = user;
 })
